@@ -19,3 +19,32 @@ export const students = [
         addr : "서울"
     }
 ]
+
+export const friends = [
+    {
+        name : "kim",
+        phone : '010-1515-0511',
+        addr : 'seoul',
+        job : 'teacher'
+    },{
+        name : "song",
+        phone : '010-5645-4187',
+        addr : 'ansan',
+        job : 'actor'
+    },{
+        name : "lee",
+        phone : '010-2348-8546',
+        addr : 'incheon',
+        job : 'engineer'
+    },{
+        name : "cha",
+        phone : '010-1654-8499',
+        addr : 'suwon',
+        job : 'barista'
+    },{
+        name : "hong",
+        phone : '010-5464-7821',
+        addr : 'seoul',
+        job : 'teacher'
+    }
+]

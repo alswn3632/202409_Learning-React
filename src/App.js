@@ -1,20 +1,27 @@
 import React from "react";
-import Student from "./components/Student";
-// import Test from "./components/Test";
-// import Test2 from "./components/Test2";
-// import Test3 from "./components/Test3";
+import Home from "./components/Home";
+import Header from "./components/Header";
+import Footer from "./components/Footer";
+import { BrowserRouter, Route, Routes } from "react-router-dom";
+import Test from "./components/Test";
+import Test2 from "./components/Test2";
+import Test3 from "./components/Test3";
+import Test4 from "./components/Test4";
 
 function App() {
   return (
     <div className="App">
-      <div>Hello React!!!</div>
-      {/* <Test />
-      <Test />
-      <Test2 />
-      <Test2 />
-      <Test3 />
-      <Test3 /> */}
-      <Student />
+      <BrowserRouter>
+        <Header />
+          <Routes>
+            <Route path='/' element={<Home />}/>
+            <Route path='/test' element={<Test />}/>
+            <Route path='/test2' element={<Test2 />}/>
+            <Route path='/test3' element={<Test3 />}/>
+            <Route path='/test4' element={<Test4 name="홍길동" color="pink"/>}/>
+          </Routes>
+        <Footer />
+      </BrowserRouter>
     </div>
   );
 }
